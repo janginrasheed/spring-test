@@ -11,9 +11,17 @@ public class TopicController {
     @Autowired
     private TopicService topicService;
 
+    @Autowired
+    Test test;
+
     @RequestMapping("topics")
     public List<Topic> getAllTopics() {
         return topicService.getALLTopics();
+    }
+
+    @RequestMapping("testh2")
+    public List<String> testH2() {
+        return test.getH2Data();
     }
 
     @RequestMapping("topics/{id}")
