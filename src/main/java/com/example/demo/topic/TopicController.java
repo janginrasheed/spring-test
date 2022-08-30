@@ -20,7 +20,7 @@ public class TopicController {
     }
 
     @RequestMapping("testh2")
-    public List<String> testH2() {
+    public List<Employee> testH2() {
         return test.getH2Data();
     }
 

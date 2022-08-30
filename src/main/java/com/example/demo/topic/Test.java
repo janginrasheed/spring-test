@@ -9,7 +9,7 @@ import java.util.List;
 public interface Test {
 
     @RegisterFieldMapper(Employee.class)
-    @SqlQuery("select first_name from TBL_EMPLOYEES")
-    public List<String> getH2Data();
+    @SqlQuery("select * from TBL_EMPLOYEES")
+    public List<Employee> getH2Data();
 
 }
